@@ -1,0 +1,50 @@
+// push to repo
+git push -u origin master
+
+// show the changed file list between two version
+git diff hash1 hash2 --stat
+git diff branch1 branch2 --stat
+
+// push for draft
+git push origin HEAD:refs/drafts/main/rel_intg
+
+// remove files not added
+git clean -xdf
+git clean -n
+
+// revert
+git revert -s
+git revert --no-commit // multiple revert
+git revert HEAD~1 --no-edit --mainline 2 // revert merge
+
+// git merge
+git merge branchFrom [branchTo]
+
+// rm files from staging area
+git reset xxx
+
+// tag for project version management
+git tag --help
+git tag
+git tag <tagname> <commitid>
+git tag -d <tagname>
+
+// rebase
+git pull --rebase
+git rebase
+
+//log
+git log shaid/tag
+git log file_name
+git log branch
+git log branch file_name
+git log --no-merge
+
+// GITK
+
+// kdiff3 to solve conflict
+
+// refs/for is the rule of gerrit
+              
+
+
